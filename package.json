@@ -4,7 +4,8 @@
   "description": "First app in 30 app challenge",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",
