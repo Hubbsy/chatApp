@@ -1,12 +1,13 @@
 const express = require('express');
 const app = express();
+const io = require('socket.js')
 
 app.set('view engine', 'ejs');
 
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
-    res.send('Hello World!')
+    res.render('index');
 });
 
 const PORT = process.env.PORT || 3000
